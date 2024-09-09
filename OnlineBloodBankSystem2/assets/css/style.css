@@ -1,0 +1,221 @@
+:root {
+    --red: #880000;
+}
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header .head {
+    font-size: 110%;
+    background-color: var(--red);
+    color: #fff;
+}
+
+.topicon i {
+    padding: 5px 8px;
+}
+
+header .head2 {
+    background-image: linear-gradient(to right, #fff 0%, #ffdddd 100%);
+}
+
+header .head2 img {
+    border-left: 6px solid var(--red);
+    border-radius: 8px;
+}
+
+header .navbar-brand {
+    font-size: 170%;
+    font-family: Gabriola;
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+/* Navigation links */
+.navbar-nav .nav-link {
+    color: var(--red);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(75, 57, 57, 0.607);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: var(--red);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Toggler button customization */
+.navbar-toggler {
+    border-color: var(--red);
+}
+
+.navbar-toggler-icon {
+    color: var(--red);
+}
+
+/* Mobile view enhancements */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/* Footer styles */
+.footer {
+    font-size: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer .row {
+    padding: 20px;
+    margin: 0;
+    background-image: linear-gradient(to right, #fff 0%, #ffdddd 100%);
+    border-left: 6px solid var(--red);
+}
+
+.footer .row h3 {
+    color: var(--red);
+    margin: 20px;
+}
+
+.footer .row p {
+    text-align: justify;
+    color: var(--red);
+    padding: 10px;
+}
+
+.footer .row .link a, .footer li, .footer li a {
+    line-height: 2.5;
+    color: var(--red);
+}
+
+.footer .ft {
+    background-color: var(--red);
+    color: #fff;
+}
+
+/* Body content styles */
+.stock {
+    font-family: Algerian, sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid var(--red);
+    margin: 5px 17px;
+    border-radius: 4px;
+    background: #fff7f7;
+    padding: 15px 25px;
+}
+
+.stock .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 35px;
+}
+
+.stock .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #f7f0f0;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px 0;
+}
+
+.stock .box h1 {
+    color: rgba(236, 24, 24, 0.695);
+    padding: 10px 0;
+}
+
+.stock .box p {
+    color: var(--red);
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.stock .box:hover {
+    box-shadow: 0 10px 15px rgba(234, 91, 91, 0.867);
+    transform: scale(1.03);
+}
+
+/* Cards */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(50% - 1rem);
+    margin: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Table styles */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.354);
+    border-left: 1.5px solid  #880000 !important;
+    border-right: 1.5px solid #880808 !important;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+}
+
+.table th {
+    background-color: #880808 !important;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.table td {
+    font-size: 16px;
+    color: var(--red);
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover td {
+    font-weight: bold;
+}
+
+/* Image styling */
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+}
